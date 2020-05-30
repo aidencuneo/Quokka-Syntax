@@ -76,7 +76,7 @@
 		},
 		"functiondefs": {
 			"name": "function.q",
-			"begin": "(fun) +([\\w\\.]+)",
+			"begin": "\\b(fun) +([\\w\\.]+)\\b",
 			"end": ".",
 			"beginCaptures": {
 				"1": {"name": "keyword.control.q"},
@@ -85,7 +85,7 @@
 		},
 		"imports": {
 			"name": "import.q",
-			"begin": "(import) +(['\"]*)([\\w\\.]+)(['\"]*)",
+			"begin": "(import) +(['\"]*)([\\w\\.]+)(['\"]*)\\b",
 			"end": "(.|\\b)",
 			"beginCaptures": {
 				"1": {"name": "keyword.control.q"},
@@ -96,7 +96,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.q",
-					"match": "\\b(if|elif|else|until|while|for|ret|continue|break|end|del|fun|class|import|lam)\\b"
+					"match": "\\b(if|elif|else|until|while|for|ret|continue|break|end|del|fun|class|import|lam|not|and|or|xor|nor)\\b"
 				},
 				{
 					"name": "keyword.control.q",

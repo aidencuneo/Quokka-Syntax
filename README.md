@@ -25,3 +25,7 @@ Changed the `return` keyword to the `ret` keyword and added some new functions.
 ### 1.1.7
 
 Added the `import` and `lam` keywords, and made function definitions and imports extra stylish and fancy, just as they should be. ;)
+
+### 1.1.8
+
+Fixed some things and added more boolean operators, such as `not`, `and`, `or`, `xor`, `nor`.
