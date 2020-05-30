@@ -1,0 +1,35 @@
+{
+    "name": "quokkasyntax",
+    "displayName": "Quokka Syntax",
+    "description": "Syntax Highlighting for Quokka",
+    "version": "1.1.7",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "publisher": "aidencuneo",
+    "contributes": {
+        "languages": [
+            {
+                "id": "quokka",
+                "aliases": [
+                    "Quokka",
+                    "quokka"
+                ],
+                "extensions": [
+                    ".q"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "quokka",
+                "scopeName": "source.q",
+                "path": "./syntaxes/quokka.json"
+            }
+        ]
+    }
+}
