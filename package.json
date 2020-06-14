@@ -10,6 +10,7 @@
         "Programming Languages"
     ],
     "publisher": "aidencuneo",
+    "repository": {"url": "https://github.com/aidencuneo/Quokka-Syntax"},
     "contributes": {
         "languages": [
             {
