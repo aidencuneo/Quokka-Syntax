@@ -29,3 +29,7 @@ Added the `import` and `lam` keywords, and made function definitions and imports
 ### 1.1.8
 
 Fixed some things and added more boolean operators, such as `not`, `and`, `or`, `xor`, `nor`.
+
+### 1.2.0
+
+Added a few operators such as `?` and `~`, and finally made longs highlight correctly.
