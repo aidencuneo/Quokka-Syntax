@@ -33,3 +33,7 @@ Fixed some things and added more boolean operators, such as `not`, `and`, `or`, 
 ### 1.2.0
 
 Added a few operators such as `?` and `~`, and finally made longs highlight correctly.
+
+### 1.2.3
+
+Fixed up a bunch of errors with syntax highlighting. Added some keywords and tokens.

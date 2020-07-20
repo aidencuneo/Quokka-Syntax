@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "name": "T",
+    "name": "Quokka",
     "patterns": [
         {"include": "#strings"},
         {"include": "#rawstrings"},
@@ -8,7 +8,6 @@
         {"include": "#greyopers"},
         {"include": "#booleans"},
         {"include": "#integers"},
-        {"include": "#longs"},
         {"include": "#floats"},
         {"include": "#functions"},
         {"include": "#functiondefs"},
@@ -44,7 +43,7 @@
         "greyopers": {
             "patterns": [{
                 "name": "keyword.q",
-                "match": "(\\+|\\-|\\*|/|\\?|~|:|<|>|\\^|%|=|\\|)"
+                "match": "(\\+|\\-|\\*|/|\\?|~|:|<|>|\\^|%|&|=|\\|)"
             }]
         },
         "booleans": {
@@ -59,15 +58,6 @@
                 "match": "\\b(-|\\+)*[0-9]+\\b"
             }]
         },
-        "longs": {
-            "name": "long.q",
-            "begin": "\\b([0-9]+)(l|L)\\b",
-            "end": ".",
-            "beginCaptures": {
-                "1": {"name": "constant.numeric.q"},
-                "2": {"name": "keyword.control.q"}
-            }
-        },
         "floats": {
             "patterns": [{
                 "name": "constant.numeric.q",
@@ -76,18 +66,17 @@
         },
         "functions": {
             "name": "function.q",
-            "begin": "\\b([\\w\\.]+) +([\\w\\.]+) *(=)",
-            "end": ".",
+            "begin": "\\b([\\w\\.]+) *(=|\\+=|\\-=|\\*=|/=|\\*\\*=|%=|\\&=)",
+            "end": "( |\\b)",
             "beginCaptures": {
-                "1": {"name": "keyword.control.q"},
-                "2": {"name": "constant.numeric.q"},
-                "3": {"name": "keyword.q"}
+                "1": {"name": "constant.numeric.q"},
+                "2": {"name": "keyword.q"}
             }
         },
         "functiondefs": {
             "name": "function.q",
-            "begin": "\\b(fun) +([\\w\\.]+)\\b",
-            "end": ".",
+            "begin": "\\b(fun) +([\\w\\.]+)",
+            "end": "\\b",
             "beginCaptures": {
                 "1": {"name": "keyword.control.q"},
                 "2": {"name": "entity.name.function.q"}
@@ -106,11 +95,11 @@
             "patterns": [
                 {
                     "name": "keyword.control.q",
-                    "match": "\\b(if|elif|else|until|while|for|ret|continue|break|end|del|fun|class|import|lam|not|and|or|xor|nor)\\b"
+                    "match": "\\b(if|elif|else|until|while|for|ret|rep|cut|del|end|fun|class|lam|import|global|not|and|or|xor|nor|in)\\b"
                 },
                 {
                     "name": "keyword.control.q",
-                    "match": "\\b(print|println|input|type|disp|exec|exit|sizeof|string|int|long|bool)\\b"
+                    "match": "\\b(print|println|input|type|disp|exec|exit|sizeof|string|int|bool|open)\\b"
                 }
             ]
         }
