@@ -2,7 +2,7 @@
     "name": "quokkasyntax",
     "displayName": "Quokka Syntax",
     "description": "Syntax Highlighting for Quokka",
-    "version": "1.2.0",
+    "version": "1.2.3",
     "engines": {
         "vscode": "^1.41.0"
     },
@@ -10,7 +10,9 @@
         "Programming Languages"
     ],
     "publisher": "aidencuneo",
-    "repository": {"url": "https://github.com/aidencuneo/Quokka-Syntax"},
+    "repository": {
+        "url": "https://github.com/aidencuneo/Quokka-Syntax"
+    },
     "contributes": {
         "languages": [
             {
