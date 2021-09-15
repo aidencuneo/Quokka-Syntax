@@ -1,8 +1,10 @@
 # Quokka Syntax README
 
-Syntax highlighting for Quokka.
+Syntax highlighting for Quokka (a programming language written by Aiden Blishen Cuneo).
 
 ## The Quokka Interpreter is coming very soon to all operating systems, please continue to check back here for an installer or repository URL.
+
+Repository URL: https://github.com/Kyuneo/Quokka
 
 ## Release Notes
 
